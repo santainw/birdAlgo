@@ -62,49 +62,49 @@ public class firstPage extends JFrame {
 	public firstPage() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 864, 738);
+		setBounds(100, 100, 990, 788);
 		contentPane = new JPanel();
 		contentPane.setLayout(null);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
 		JScrollPane scrollPane_4 = new JScrollPane();
-		scrollPane_4.setBounds(94, 109, 216, 194);
+		scrollPane_4.setBounds(209, 148, 216, 194);
 		contentPane.add(scrollPane_4);
 		
 		JTextArea textAreaMatA = new JTextArea();
 		scrollPane_4.setViewportView(textAreaMatA);
 		
 		JScrollPane scrollPane_5 = new JScrollPane();
-		scrollPane_5.setBounds(371, 109, 216, 194);
+		scrollPane_5.setBounds(486, 148, 216, 194);
 		contentPane.add(scrollPane_5);
 		
 		JTextArea textAreaMatB = new JTextArea();
 		scrollPane_5.setViewportView(textAreaMatB);
 		
 		JScrollPane scrollPane_6 = new JScrollPane();
-		scrollPane_6.setBounds(94, 341, 216, 194);
+		scrollPane_6.setBounds(209, 380, 216, 194);
 		contentPane.add(scrollPane_6);
 		
 		JTextArea textAreaBruteFor = new JTextArea();
 		scrollPane_6.setViewportView(textAreaBruteFor);
 		
 		JScrollPane scrollPane_7 = new JScrollPane();
-		scrollPane_7.setBounds(371, 341, 216, 194);
+		scrollPane_7.setBounds(486, 380, 216, 194);
 		contentPane.add(scrollPane_7);
 		
 		JTextArea textAreaStrassen = new JTextArea();
 		scrollPane_7.setViewportView(textAreaStrassen);
 		
 		textFieldInputNumMat = new JTextField();
-		textFieldInputNumMat.setBounds(141, 59, 243, 20);
+		textFieldInputNumMat.setBounds(279, 599, 243, 20);
 		contentPane.add(textFieldInputNumMat);
 		textFieldInputNumMat.setColumns(10);
 		
 		JLabel lblSizeOfMat = new JLabel("Size of Matrix");
 		lblSizeOfMat.setForeground(Color.BLACK);
 		lblSizeOfMat.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblSizeOfMat.setBounds(21, 59, 110, 20);
+		lblSizeOfMat.setBounds(159, 599, 110, 20);
 		contentPane.add(lblSizeOfMat);
 		
 		JButton buttonGe = new JButton("Generate", new ImageIcon(firstPage.class.getResource("GenerateButton.png")));
@@ -113,7 +113,7 @@ public class firstPage extends JFrame {
 			}
 		});
 		buttonGe.setBackground(Color.MAGENTA);
-		buttonGe.setBounds(394, 45, 198, 53);
+		buttonGe.setBounds(532, 585, 198, 53);
 		contentPane.add(buttonGe);
 		
 		JButton buttonReset = new JButton("", new ImageIcon(firstPage.class.getResource("ResetButton.png")));
@@ -121,7 +121,7 @@ public class firstPage extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		buttonReset.setBounds(602, 45, 204, 53);
+		buttonReset.setBounds(740, 585, 204, 53);
 		contentPane.add(buttonReset);
 		
 		JButton btnCom = new JButton("New button", new ImageIcon(firstPage.class.getResource("Comparebutton-01.png")));
@@ -129,50 +129,50 @@ public class firstPage extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnCom.setBounds(615, 296, 198, 53);
+		btnCom.setBounds(730, 335, 198, 53);
 		contentPane.add(btnCom);
 		
 		JLabel lblNewLabel_2 = new JLabel("Calculate Algorithm");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(94, 314, 233, 16);
+		lblNewLabel_2.setBounds(209, 353, 233, 16);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblTextStrass = new JLabel("Strassen Time");
 		lblTextStrass.setFont(new Font("Tahoma", Font.BOLD, 13));
-		lblTextStrass.setBounds(158, 576, 216, 17);
+		lblTextStrass.setBounds(41, 632, 216, 17);
 		contentPane.add(lblTextStrass);
 		
 		textFieldStrasse = new JTextField();
-		textFieldStrasse.setBounds(397, 574, 243, 20);
+		textFieldStrasse.setBounds(280, 630, 243, 20);
 		contentPane.add(textFieldStrasse);
 		textFieldStrasse.setColumns(10);
 		
 		textFieldBrute = new JTextField();
 		textFieldBrute.setColumns(10);
-		textFieldBrute.setBounds(397, 615, 243, 20);
+		textFieldBrute.setBounds(280, 671, 243, 20);
 		contentPane.add(textFieldBrute);
 		
 		JLabel labelTextBrute = new JLabel("Brute force Time");
 		labelTextBrute.setFont(new Font("Tahoma", Font.BOLD, 13));
-		labelTextBrute.setBounds(158, 617, 216, 17);
+		labelTextBrute.setBounds(41, 673, 216, 17);
 		contentPane.add(labelTextBrute);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(397, 658, 243, 20);
+		textField_2.setBounds(280, 714, 243, 20);
 		contentPane.add(textField_2);
 		
 		JLabel labelDiff = new JLabel("Different Time");
 		labelDiff.setFont(new Font("Tahoma", Font.BOLD, 13));
-		labelDiff.setBounds(158, 660, 216, 17);
+		labelDiff.setBounds(41, 716, 216, 17);
 		contentPane.add(labelDiff);
 		
 		JLabel lblLogo = new JLabel("New label", new ImageIcon(firstPage.class.getResource("Logo.png")), 0);
-		lblLogo.setBounds(10, 16, 573, 186);
+		lblLogo.setBounds(0, 0, 573, 186);
 		contentPane.add(lblLogo);
 		
-		JLabel lblBackg = new JLabel("New label", new ImageIcon(firstPage.class.getResource("1681461.jpg")), 0);
-		lblBackg.setBounds(0, -49, 848, 806);
+		JLabel lblBackg = new JLabel("New label", new ImageIcon(firstPage.class.getResource("newnew.jpg")), 0);
+		lblBackg.setBounds(0, 0, 974, 749);
 		contentPane.add(lblBackg);
 		
 		JLabel lblCompareAlgorithm = new JLabel("Compare Algorithm");
